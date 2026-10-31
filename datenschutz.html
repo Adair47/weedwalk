@@ -9,14 +9,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#1F3B2C" />
   </head>
   <body>
+    <div class="blobs" aria-hidden="true"><span></span><span></span><span></span></div>
     <main>
-      <a href="./" style="text-decoration: none; color: inherit"><header class="brand"><img src="icon.png" alt="" /><span>Weed &amp; Walk</span></header></a>
-      <h1>Datenschutzerklärung</h1>
+      <div class="top">
+        <a class="brand" href="./"><span class="mark"><img src="leaf.svg" alt="" /></span>Weed &amp; Walk</a>
+        <nav class="pill-nav">
+          <a href="./">Start</a>
+          <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+      </div>
+
+      <div class="page-title"><img src="leaf.svg" alt="" /><h1>Datenschutz&shy;erklärung</h1></div>
       <p>Stand: <span class="placeholder">[Datum der Veröffentlichung]</span></p>
 
-      <div class="card">
+      <div class="feature leaf" style="margin: 16px 0">
         <strong>Kurz gesagt</strong>
         <p>
           Deine Routen, Standorte, Sorten, Bewertungen und Check-ins bleiben <strong>nur auf deinem Handy</strong>.
@@ -26,9 +36,10 @@
         </p>
       </div>
 
+      <div class="card">
       <h2>1. Verantwortlicher</h2>
       <p>
-        <span class="placeholder">[Vorname Nachname]</span>, <span class="placeholder">[Straße Hausnummer]</span>,
+        <span class="placeholder">[Vorname Nachname]</span>, <span class="placeholder">[Straße Hausnummer bzw. c/o Impressum-Service]</span>,
         <span class="placeholder">[PLZ Ort]</span>, Deutschland<br />
         E-Mail: <span class="placeholder">[kontakt@beispiel.de]</span>
       </p>
@@ -113,6 +124,7 @@
 
       <h2>9. Altersbeschränkung</h2>
       <p>Weed &amp; Walk richtet sich ausschließlich an Personen ab 18 Jahren.</p>
+      </div>
 
       <footer>
         <a href="./">Start</a>

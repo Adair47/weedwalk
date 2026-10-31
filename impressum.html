@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Impressum – Weed &amp; Walk</title>
     <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#1F3B2C" />
     <link rel="icon" href="icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,28 +13,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="blobs" aria-hidden="true"><span></span><span></span><span></span></div>
     <main>
-      <a href="./" style="text-decoration: none; color: inherit"><header class="brand"><img src="icon.png" alt="" /><span>Weed &amp; Walk</span></header></a>
-      <h1>Impressum</h1>
+      <div class="top">
+        <a class="brand" href="./"><span class="mark"><img src="leaf.svg" alt="" /></span>Weed &amp; Walk</a>
+        <nav class="pill-nav">
+          <a href="./">Start</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="impressum.html" aria-current="page">Impressum</a>
+        </nav>
+      </div>
+
+      <div class="page-title"><img src="leaf.svg" alt="" /><h1>Impressum</h1></div>
 
       <div class="card">
-        <h2 style="margin-top: 0">Angaben gemäß § 5 DDG</h2>
+        <h2>Angaben gemäß § 5 DDG</h2>
         <p>
           <strong><span class="placeholder">[Vorname Nachname]</span></strong><br />
-          <span class="placeholder">[Straße Hausnummer]</span><br />
+          <span class="placeholder">[Straße Hausnummer bzw. c/o Impressum-Service]</span><br />
           <span class="placeholder">[PLZ Ort]</span><br />
           Deutschland
         </p>
+      </div>
 
+      <div class="card">
         <h2>Kontakt</h2>
-        <p>
-          E-Mail: <span class="placeholder">[kontakt@beispiel.de]</span><br />
-          Telefon: <span class="placeholder">[optional]</span>
-        </p>
+        <p>E-Mail: <span class="placeholder">[kontakt@beispiel.de]</span></p>
+      </div>
 
+      <div class="card">
         <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
         <p><span class="placeholder">[Vorname Nachname]</span>, Anschrift wie oben</p>
+      </div>
 
+      <div class="card">
         <h2>Verbraucherstreitbeilegung</h2>
         <p>
           Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle

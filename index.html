@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Weed &amp; Walk</title>
     <meta name="description" content="Weed & Walk – deine Spaziergänge tracken, entspannt und rund. Ab 18." />
+    <meta name="theme-color" content="#1F3B2C" />
     <link rel="icon" href="icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,21 +13,76 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="blobs" aria-hidden="true"><span></span><span></span><span></span></div>
     <main>
-      <a href="./" style="text-decoration: none; color: inherit"><header class="brand"><img src="icon.png" alt="" /><span>Weed &amp; Walk</span></header></a>
+      <div class="top">
+        <a class="brand" href="./"><span class="mark"><img src="leaf.svg" alt="" /></span>Weed &amp; Walk</a>
+        <nav class="pill-nav">
+          <a href="./" aria-current="page">Start</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+      </div>
 
-      <h1>Spazieren. Chillen. Kilometer sammeln.</h1>
-      <p>
-        Weed &amp; Walk zeichnet deine Spaziergänge auf – Route, Strecke, Zeit und Tempo – und lässt dich festhalten,
-        wie die Runde war. Optional mit Freunden, immer mit deinen Daten auf deinem Handy.
-      </p>
-      <p><span class="tag">Nur ab 18</span><span class="tag">iPhone</span><span class="tag">Bald für Android</span></p>
+      <section class="hero">
+        <img class="leaf-bg" src="leaf.svg" alt="" />
+        <div>
+          <span class="tag">Nur ab 18</span><span class="tag">iPhone</span>
+          <h1>Spazieren. Chillen. <em>Kilometer sammeln.</em></h1>
+          <p>
+            Weed &amp; Walk zeichnet deine Runden auf – Route, Strecke, Zeit und Tempo – und lässt dich festhalten, wie es
+            war. Deine Daten bleiben auf deinem Handy.
+          </p>
+          <span class="button soon">Bald im App Store</span>
+        </div>
+        <div class="phone" aria-hidden="true">
+          <div class="tiny">Guten Abend 🌿<b>Lust auf 'ne Runde?</b></div>
+          <div class="row">
+            <div>Woche<b>4,2 km</b></div>
+            <div>Runden<b>3</b></div>
+            <div>Zeit<b>58 min</b></div>
+          </div>
+          <div class="rings"><div><span>LOS</span></div></div>
+          <div class="tabbar"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </section>
 
       <div class="features">
-        <div class="card"><strong>Live-Tracking</strong><p>Route auf der Karte, Strecke, Zeit und Tempo – mit Pause und Zusammenfassung.</p></div>
-        <div class="card"><strong>Dein Verlauf</strong><p>Woche, Monat, Jahr: alle Runden mit Statistiken und Bewertungen.</p></div>
-        <div class="card"><strong>Freunde</strong><p>Adde deine Leute und vergleicht eure Kilometer der Woche.</p></div>
-        <div class="card"><strong>Rauchfrei-Modus</strong><p>Wer aufhören will, bekommt einen Rauchfrei-Zähler und einen Verlangen-Tracker.</p></div>
+        <div class="feature leaf">
+          <div class="icon">📍</div>
+          <strong>Live-Tracking</strong>
+          <p>Route auf der Karte, Strecke, Zeit und Tempo – mit Päuschen und Zusammenfassung.</p>
+        </div>
+        <div class="feature haze">
+          <div class="icon">📊</div>
+          <strong>Dein Verlauf</strong>
+          <p>Woche, Monat, Jahr: alle Runden mit Statistiken und Sterne-Bewertungen.</p>
+        </div>
+        <div class="feature sun">
+          <div class="icon">👥</div>
+          <strong>Freunde</strong>
+          <p>Adde deine Leute und vergleicht eure Kilometer der Woche.</p>
+        </div>
+        <div class="feature plain">
+          <div class="icon">🎨</div>
+          <strong>Dein Look</strong>
+          <p>Fünf Farbschemata – von Waldgrün bis Nachtsession.</p>
+        </div>
+      </div>
+
+      <h2>So einfach geht's</h2>
+      <ol class="steps">
+        <li>Auf LOS tippen – die Runde wird aufgezeichnet.</li>
+        <li>Entspannt spazieren, zwischendurch ein Päuschen.</li>
+        <li>Gedrückt halten zum Beenden, bewerten, fertig.</li>
+      </ol>
+
+      <div class="card">
+        <strong>Rauchfrei-Modus</strong>
+        <p>
+          Wer aufhören will, macht aus Weed &amp; Walk mit einem Knopf eine rauchfreie Spaziergang-App – mit
+          Rauchfrei-Zähler, Meilensteinen und Verlangen-Tracker.
+        </p>
       </div>
 
       <div class="card">
